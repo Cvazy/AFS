@@ -1,0 +1,162 @@
+@import "mixins";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 640px;
+  height: 100%;
+
+  @include respondedBy(1024px) {
+    width: 100%;
+  }
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+
+  &__title {
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 500;
+    text-align: left;
+    white-space: nowrap;
+    color: var(--black-80);
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @include respondedBy(600px) {
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    @include respondedBy(480px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  .btns_container {
+    display: flex;
+    gap: 4px;
+    flex-wrap: nowrap;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 99%;
+    box-shadow: 0 3px 8px var(--black-12);
+    border-radius: 1rem;
+    padding: 24px;
+
+    @include respondedBy(1024px) {
+      padding: 20px;
+    }
+
+    @include respondedBy(600px) {
+      padding: 16px;
+    }
+
+    .head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      width: 100%;
+
+      svg {
+        min-width: 16px;
+        height: 16px;
+      }
+    }
+
+    .title {
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      text-align: left;
+      vertical-align: middle;
+      white-space: nowrap;
+
+      @include respondedBy(767px) {
+        font-size: 12px;
+        line-height: 17px;
+      }
+    }
+
+    .body {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      width: 100%;
+    }
+
+    .data_row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 12px;
+      width: 100%;
+      min-height: 32px;
+
+      @include respondedBy(767px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        height: fit-content;
+      }
+
+      p {
+        display: flex;
+        align-items: center;
+
+        @include respondedTo(1024px) {
+          min-height: 32px;
+        }
+      }
+
+      &__article {
+        font-size: 13px;
+        line-height: 20px;
+        color: var(--black-50);
+        letter-spacing: 0.25px;
+        vertical-align: middle;
+        white-space: nowrap;
+
+        @include respondedBy(767px) {
+          font-size: 11px;
+          line-height: 16px;
+        }
+      }
+
+      &__value {
+        font-size: 14px;
+        line-height: 24px;
+        color: var(--black-80);
+        letter-spacing: 0.3px;
+        vertical-align: middle;
+
+        @include respondedBy(767px) {
+          font-size: 12px;
+          line-height: 17px;
+        }
+      }
+    }
+  }
+}

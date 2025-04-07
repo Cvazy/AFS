@@ -1,0 +1,26 @@
+.button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+  padding: 4px 12px 4px 8px;
+  color: var(--primary);
+  border-radius: 8px;
+  border: 1px solid var(--black-20);
+  background-color: white;
+  transition: all 0.3s;
+
+  &:hover {
+    color: var(--secondary);
+  }
+}
+
+.text {
+  font-size: 11px;
+  line-height: 20px;
+  letter-spacing: 0.48px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 600;
+  width: 100%;
+}

@@ -1,0 +1,39 @@
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.image_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 144px;
+  height: 108px;
+
+  .image {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .remove {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 5;
+    background-color: var(--primary);
+    border-radius: 8px;
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
