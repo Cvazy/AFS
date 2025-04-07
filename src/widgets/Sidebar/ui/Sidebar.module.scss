@@ -1,0 +1,39 @@
+.container {
+  background-color: white;
+  box-shadow: 4px 0 16px var(--black-08);
+  width: 100%;
+  height: 100%;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    padding: 1.25rem;
+    width: 100%;
+    height: 100%;
+
+    section {
+      width: 100%;
+    }
+
+    .title {
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      letter-spacing: 0.3px;
+      color: var(--black-80);
+      font-weight: 700;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+
+    .subtitle {
+      font-size: 11px;
+      line-height: 1rem;
+      letter-spacing: 0.24px;
+      color: var(--black-80);
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+  }
+}

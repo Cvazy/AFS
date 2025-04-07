@@ -1,0 +1,11 @@
+.nav {
+  width: 100%;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style-type: none;
+    margin: 0;
+  }
+}
