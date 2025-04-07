@@ -1,0 +1,29 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  width: 100%;
+  transition: background-color 0.3s ease-out;
+}
+
+.dark {
+  background-color: var(--primary);
+  color: var(--white-95);
+  border: 1px solid var(--primary);
+}
+.dark:hover {
+  background-color: var(--white-20);
+}
+
+.light {
+  background-color: white;
+  color: var(--primary);
+  border: 1px solid var(--black-20);
+}
+.light:hover {
+  color: var(--secondary);
+  border-color: var(--black-40);
+}
+
+/*# sourceMappingURL=Button.module.css.map */

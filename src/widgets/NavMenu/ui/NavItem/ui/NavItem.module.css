@@ -1,0 +1,16 @@
+.item {
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+}
+
+.text {
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.48px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 600;
+  width: 100%;
+}
+
+/*# sourceMappingURL=NavItem.module.css.map */

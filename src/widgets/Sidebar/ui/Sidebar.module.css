@@ -1,37 +1,17 @@
-.container {
-  background-color: white;
-  box-shadow: 4px 0 16px var(--black-08);
-  width: 100%;
-  height: 100%;
-}
-.container__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1.25rem;
-  padding: 1.25rem;
-  width: 100%;
-  height: 100%;
-}
-.container__wrapper section {
-  width: 100%;
-}
-.container__wrapper .title {
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-  letter-spacing: 0.3px;
-  color: var(--black-80);
-  font-weight: 700;
-  vertical-align: middle;
-  white-space: nowrap;
-}
-.container__wrapper .subtitle {
-  font-size: 11px;
-  line-height: 1rem;
-  letter-spacing: 0.24px;
-  color: var(--black-80);
-  vertical-align: middle;
-  white-space: nowrap;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @import "mixins";
+ *   |         ^^^^^^^^
+ *   '
+ *   Sidebar.module.scss 1:9  root stylesheet */
 
-/*# sourceMappingURL=Sidebar.module.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"mixins\";\a   \2502          ^^^^^^^^\a   \2575 \a   Sidebar.module.scss 1:9  root stylesheet";
+}

@@ -15,6 +15,7 @@
   --black-10: rgba(0, 0, 0, 0.1);
   --black-12: rgba(0, 0, 0, 0.12);
   --black-20: rgba(0, 0, 0, 0.2);
+  --black-30: rgba(0, 0, 0, 0.3);
   --black-40: rgba(0, 0, 0, 0.4);
   --black-50: rgba(0, 0, 0, 0.5);
   --black-80: rgba(0, 0, 0, 0.8);
@@ -45,6 +46,10 @@ p {
 a,
 button {
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
 }
 
 input, textarea {

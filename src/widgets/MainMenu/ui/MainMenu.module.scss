@@ -1,20 +1,73 @@
+@import "mixins";
+
 .container {
+  flex: 1;
   background-color: var(--primary);
   height: 100%;
+  max-width: 64px;
+
+  @include respondedBy(1024px) {
+    max-height: 64px;
+    max-width: 100%;
+  }
 
   &__wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 1.25rem;
-    padding: 6px 20px;
+    padding: 20px 6px;
     height: 100%;
 
-    &-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1.25rem;
+    @include respondedBy(1024px) {
+      flex-direction: row;
     }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+
+    @include respondedBy(1024px) {
+      flex-direction: row;
+    }
+  }
+
+  .logo {
+    min-width: 36px;
+    min-height: 36px;
+    max-width: 36px;
+    max-height: 36px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  a {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .line {
+    width: 19px;
+    height: 1px;
+    background-color: var(--white-20);
+
+    @include respondedBy(1024px) {
+      width: 1px;
+      height: 19px;
+    }
+  }
+}
+
+.rotate180 {
+  @include respondedTo(1024px) {
+    rotate: 180deg;
   }
 }
