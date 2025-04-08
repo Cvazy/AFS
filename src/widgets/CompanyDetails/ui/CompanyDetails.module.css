@@ -1,0 +1,11 @@
+.dateBlock {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+}
+.dateBlock .slash {
+  color: var(--black-30);
+}
+
+/*# sourceMappingURL=CompanyDetails.module.css.map */

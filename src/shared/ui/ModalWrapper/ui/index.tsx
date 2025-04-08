@@ -17,7 +17,7 @@ interface IModalWrapperProps {
 }
 
 export const ModalWrapper = forwardRef<HTMLDivElement, IModalWrapperProps>(
-  ({ isActive, setFunction, children, maxWidth }, ref) => {
+  ({ isActive, setFunction, children, maxWidth = "" }, ref) => {
     const innerRef = useRef<HTMLDivElement | null>(null);
 
     useImperativeHandle(ref, () => innerRef.current!);
@@ -29,8 +29,15 @@ export const ModalWrapper = forwardRef<HTMLDivElement, IModalWrapperProps>(
     });
 
     return (
-      <div className={styles.modal} ref={innerRef}>
-        <div className={styles.modal__wrapper}>{children}</div>
+      <div className={styles.modal}>
+        <div className={styles.modal__wrapper}>
+          <div
+            ref={innerRef}
+            style={{ maxWidth: maxWidth ? maxWidth : "", width: "100%" }}
+          >
+            {children}
+          </div>
+        </div>
       </div>
     );
   },

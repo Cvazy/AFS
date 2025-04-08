@@ -1,0 +1,27 @@
+.input {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  vertical-align: middle;
+  color: var(--black-80);
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--black-20);
+  padding: 10px 12px;
+  width: 100%;
+  transition: border-color 0.3s ease-out;
+}
+.input:hover {
+  border-color: var(--black-50);
+}
+.input:focus {
+  border-color: var(--focus);
+}
+.input:disabled {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=Input.module.css.map */

@@ -1,0 +1,10 @@
+.dateBlock {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+
+  .slash {
+    color: var(--black-30);
+  }
+}

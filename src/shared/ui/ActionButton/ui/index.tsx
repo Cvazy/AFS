@@ -4,14 +4,23 @@ import { useState } from "react";
 interface IActionButtonProps {
   path: string;
   text: string;
+  onClick?: () => void;
+  disabled?: boolean;
 }
 
-export const ActionButton = ({ path, text }: IActionButtonProps) => {
+export const ActionButton = ({
+  path,
+  text,
+  onClick,
+  disabled,
+}: IActionButtonProps) => {
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
   return (
     <button
       type={"button"}
+      onClick={onClick}
+      disabled={disabled}
       className={styles.button}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
